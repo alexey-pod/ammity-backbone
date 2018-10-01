@@ -1,0 +1,24 @@
+AddDefaultCharset utf-8
+
+<ifModule mod_rewrite.c>
+    RewriteEngine On
+	
+	
+	#редирект на без www
+	#локально
+	RewriteCond %{HTTP_HOST} ^www.loc_ammity_backbone.ru$ [NC]
+	RewriteRule ^(.*)$ http://loc_ammity_backbone.ru/$1 [R=301,L]
+	#интернет
+	RewriteCond %{HTTP_HOST} ^www.ammity-backbone.likeuse.ru$ [NC]
+	RewriteRule ^(.*)$ http://ammity-backbone.likeuse.ru/$1 [R=301,L]
+	
+	
+	
+	
+	
+	
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !index
+    RewriteRule (.*) index.html [L]
+</ifModule>

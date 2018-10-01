@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<title id="seo_title"></title>
+		<meta name="keywords" content="профессиональное спортивное оборудование,беговые дорожки,эллиптические тренажеры,велотренажеры,гребные тренажеры,оборудование для фитнес-клубов" />
+		<meta name="description" content="Ammity - профессиональное спортивное кардио- оборудование премиум класса. Тренажеры для фитнес-клубов." />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="/css/client.css?v=4465567" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:700&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    </head>
+    <body>
+		<img src="/page_form_preloader_40x28.gif" class="hide" id="preloader_image" />
+		<div class="overlay" id="overlay" style="display:none_;"></div>
+		<div id="page_form_preloader" class="page_form_preloader" style="display: block_;">
+			<div class="bg"></div>
+			<div class="preloader"></div>
+		</div>
+        <div id="global-wrapper" class="blurred_">
+            <div id="wrapper" class="home">
+				<header id="header" class="clearfix">
+					<div class="logo">
+						<a href="/">Ammity</a>
+					</div>
+					<!-- end logo -->
+					<div class="header-right">
+						<div id="top_search_form_container" class="top_search_form_container" style=""></div>
+						<nav class="top-nav as_block" id="top-nav">
+							<ul>
+								<li>
+									<a class="register" href="/pages/cooperation/">сотрудничество</a>
+								</li>
+								<li class="basket_top" id="basket_top"></li>
+							</ul>
+						</nav>
+						<!-- end top-nav -->
+						<div class="form-row">
+							<nav>
+								<form>
+									<input id="top_query" type="text" class="type-text" value="" placeholder="Найти на сайте..." />
+									<input type="submit" value="" class="submit" />
+								</form>
+								<ul>
+									<li>
+										<a href="/pages/search_dealer/">поиск диллера</a>
+									</li>
+									<li>
+										<a href="/pages/product_registration/">регистрация продукта</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!-- end form-row -->
+						<nav class="nav clearfix">
+							<ul>
+								<li><a href="/pages/contact/">контакты</a></li>
+								<li><a href="/pages/presentation/">презентации</a></li>
+								<li><a href="/pages/action/">акции</a></li>
+								<li><a href="/pages/about/">о компании</a></li>
+								<li><a href="/pages/app/">APP</a></li>
+								<li><a href="/catalog/">продукция</a></li>
+								<li><a href="/">Главная</a></li>                                                       
+							</ul>
+						</nav>
+						<!-- end nav -->
+					</div>
+					<!-- end header-right -->
+				</header>
+				<!-- end header -->
+				<section id="container" class="clearfix">
+					<div id="b_view"></div>
+					
+					<aside class="sidebar hide" id="left_sidebar">
+						<div id="left_menu"></div>
+						<div id="left_banner"><!-- баннеры -->
+						{{#each this}}
+							<a href="{{url}}" class="aside-widget">
+								<img src="{{icon_white}}"/>
+								{{#iif disable_name '==' 1}}
+								<h3 style="color:#000;background:none;" >{{{name}}}</h3>
+								{{/iif}}	
+								
+								{{#iif disable_name '!=' 1}}
+								<h3>{{{name}}}</h3>
+								{{/iif}}
+								<div class="url_name">{{url_name}}</div>
+							</a>
+						{{/each}}
+						</div>
+					</aside>
+				</section>
+				<!-- end conteiner -->
+				<footer id="footer" class="clearfix">
+					<p class="copy">© LTD «AMMITY», 2005–2015</p>
+					<ul class="social-link">
+						<li><p>Читайте нас: </p></li>
+						<li class="vk"><a href="#"></a></li>
+						<li class="fb"><a href="#"></a></li>
+						<li class="twitter"><a href="#"></a></li>
+						<li class="rss"><a href="#"></a></li>
+					</ul>
+				</footer>
+				<!-- end footer -->
+			</div>
+			<!-- end wrapper -->
+        </div><!-- end global-wrapper -->
+		
+		<div class="login_form" id="login_form">
+			<div class="header">
+				<span>вход в кабинет дилера</span>
+				<div class="close"></div>
+			</div>
+			<div class="content">
+				<div class="line">
+					<input type="text" value="" placeholder="Логин (email)" id="user_auth_login" />
+				</div>
+				<div class="line">
+					<input type="password" value="" placeholder="Пароль" id="user_auth_password" />
+				</div>
+				<div class="error">Неверное имя пользователя или пароль</div>
+				<div class="btn_block">
+					<div class="btn send">
+						Войти
+					</div>
+				</div>
+			</div>
+		</div>
+				
+	
+	<script type="text/javascript" src="/js/jquery/jquery-1.12.2.js"></script>
+	<script type="text/javascript" src="/js/jquery/jquery-ui-1.9.2.custom.min.js"></script>
+	<link href="/js/jquery/jquery-ui-1.8.6.custom.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/js/underscore.js"></script>
+	<script type="text/javascript" src="/js/backbone.js"></script>
+	<script type="text/javascript" src="/js/handlebars-v4.0.5.js"></script>
+	
+	<!-- lightbox -->
+	<link href="/js/jquery/lightbox/css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" media="screen" />
+	<script src="/js/jquery/lightbox/jquery.lightbox-0.5.pack2.js" type="text/javascript"></script>
+	<!--END lightbox -->
+	
+	<!-- загрузка файлов -->
+		<!--product_registration-->
+		<script src="/js/fileuploader/fileuploader_2.js" type="text/javascript"></script>
+		<link href="/js/fileuploader/fileuploader.css" rel="stylesheet" type="text/css" />
+	<!-- END загрузка файлов -->
+	
+	<!--search_dealer-->
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl2ei7wUuccuWnA5CCoD7Pv9n89ag92MQ" type="text/javascript"></script>
+	<!--END search_dealer-->
+	
+	<!-- подключаем скроллер -->
+		<link rel="stylesheet" type="text/css" href="/js/scroll/js-scrollbars-v2/scrollbars.css" />
+		<link rel="stylesheet" type="text/css" href="/js/scroll/js-scrollbars-v2/scrollbars-grey.css" />
+		<script src="/js/scroll/js-scrollbars-v2/new/jquery.event.drag-2.2.js"></script>
+		<script src="/js/scroll/js-scrollbars-v2/jquery.ba-resize.min.js"></script>
+		<script src="/js/scroll/js-scrollbars-v2/mousehold.js"></script>
+		<script src="/js/scroll/js-scrollbars-v2/jquery.mousewheel.js"></script>
+		<script src="/js/scroll/js-scrollbars-v2/aplweb.scrollbars_2.js"></script>
+	<!--END подключаем скроллер -->
+		
+		<script src="/app/app.js"></script>
+		<!--
+		картинки для подгрузки
+		-->
+		<img style="display:none;" src="/img/client/ann_item/delete_compare_hover.png"/>
+    </body>
+</html>
